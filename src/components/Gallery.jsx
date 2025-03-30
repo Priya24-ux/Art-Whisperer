@@ -257,95 +257,430 @@
 
 
 
-import React from "react";
+// import React from "react";
+// import "./Gallery.css";
+
+// const galleryData = [
+//   {
+//     id: 10,
+//     src: "/images/digi3.jpg",
+//     title: "Forest Serenity",
+//     desc: "A breathtaking forest view.",
+//     price: "$200",
+//   },
+//   {
+//     id: 9,
+//     src: "/images/p4.jpg",
+//     title: "Mountain View",
+//     desc: "Snow-covered peaks .",
+//     price: "$250",
+//   },
+//   {
+//     id: 8,
+//     src: "/images/digi4.jpg",
+//     title: "Sunset Bliss",
+//     desc: "Golden sunset over calm waters.",
+//     price: "$300",
+//   },
+//   {
+//     id: 7, // Fixed duplicate ID
+//     src: "/images/wood1.jpg",
+//     title: "City Lights",
+//     desc: "Vibrant city skyline at night.",
+//     price: "$350",
+//   },
+
+//   {
+//     id: 6,
+//     src: "/images/p1.jpg",
+//     title: "Sunset Bliss",
+//     desc: "Golden sunset over calm waters.",
+//     price: "$400",
+//   },
+//   {
+//     id: 5, // Fixed duplicate ID
+//     src: "/images/s1.jpg",
+//     title: "City Lights",
+//     desc: "Vibrant city skyline at night.",
+//     price: "$450",
+//   },
+
+//   {
+//     id: 4,
+//     src: "/images/modern2.jpg",
+//     title: "Sunset Bliss",
+//     desc: "Golden sunset over calm waters.",
+//     price: "$500",
+//   },
+//   {
+//     id: 3, // Fixed duplicate ID
+//     src: "/images/modern1.jpg",
+//     title: "City Lights",
+//     desc: "Vibrant city skyline at night.",
+//     price: "$550",
+//   },
+//   {
+//     id: 2,
+//     src: "/images/landscape2.jpg",
+//     title: "Sunset Bliss",
+//     desc: "Golden sunset over calm waters.",
+//     price: "$600",
+//   },
+//   {
+//     id: 1, // Fixed duplicate ID
+//     src: "/images/landscape1.jpg",
+//     title: "City Lights",
+//     desc: "Vibrant city skyline at night.",
+//     price: "$650",
+//   },
+// ];
+
+// const GalleryCard = ({ src, title, desc,price }) => {
+//   return (
+//     <div className="gallery-card">
+//       <img src={src} className="gallery-img" alt={title} />
+//       <div className="gallery-info">
+//         <h5>{title}</h5>
+//         <p>{desc}</p>
+//         <p className="artwork-price">{price}</p>
+//         <button className="buy-button">Buy Now</button>
+//       </div>
+//     </div>
+//   );
+// };
+
+// const GalleryPage = () => {
+//   return (
+//     <div className="gallery-container">
+//       <h2 className="gallery-title">Discover Our Art Collection</h2>
+//       <div className="row">
+//         {galleryData.map((item) => (
+//           <GalleryCard key={item.id} {...item} />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default GalleryPage;
+
+
+
+
+
+
+
+// import React, { useState } from "react";
+// import "./Gallery.css";
+// import SearchFilter from "./SearchFilter";
+
+// const galleryData = [
+//   {
+//     id: 10,
+//     src: "/images/digi3.jpg",
+//     title: "Forest Serenity",
+//     desc: "A breathtaking forest view.",
+//     price: 200,
+//     category: "landscape",
+//     artist: "Alice",
+//   },
+//   {
+//     id: 9,
+//     src: "/images/p4.jpg",
+//     title: "Mountain View",
+//     desc: "Snow-covered peaks.",
+//     price: 250,
+//     category: "landscape",
+//     artist: "Bob",
+//   },
+//   {
+//     id: 8,
+//     src: "/images/digi4.jpg",
+//     title: "Sunset Bliss",
+//     desc: "Golden sunset over calm waters.",
+//     price: 300,
+//     category: "painting",
+//     artist: "Charlie",
+//   },
+//   {
+//     id: 7,
+//     src: "/images/wood1.jpg",
+//     title: "City Lights",
+//     desc: "Vibrant city skyline at night.",
+//     price: 350,
+//     category: "modern",
+//     artist: "Diana",
+//   },
+//   {
+//     id: 6,
+//     src: "/images/p1.jpg",
+//     title: "Sunset Bliss",
+//     desc: "Golden sunset over calm waters.",
+//     price: 400,
+//     category: "painting",
+//     artist: "Emma",
+//   },
+//   {
+//     id: 5,
+//     src: "/images/s1.jpg",
+//     title: "City Lights",
+//     desc: "Vibrant city skyline at night.",
+//     price: 450,
+//     category: "sculpture",
+//     artist: "Frank",
+//   },
+//   {
+//     id: 4,
+//     src: "/images/modern2.jpg",
+//     title: "Sunset Bliss",
+//     desc: "Golden sunset over calm waters.",
+//     price: 500,
+//     category: "modern",
+//     artist: "Grace",
+//   },
+//   {
+//     id: 3,
+//     src: "/images/modern1.jpg",
+//     title: "City Lights",
+//     desc: "Vibrant city skyline at night.",
+//     price: 550,
+//     category: "modern",
+//     artist: "Hank",
+//   },
+//   {
+//     id: 2,
+//     src: "/images/landscape2.jpg",
+//     title: "Sunset Bliss",
+//     desc: "Golden sunset over calm waters.",
+//     price: 600,
+//     category: "landscape",
+//     artist: "Isla",
+//   },
+//   {
+//     id: 1,
+//     src: "/images/landscape1.jpg",
+//     title: "City Lights",
+//     desc: "Vibrant city skyline at night.",
+//     price: 650,
+//     category: "landscape",
+//     artist: "Jack",
+//   },
+// ];
+
+// const GalleryCard = ({ src, title, desc, price }) => (
+//   <div className="gallery-card">
+//     <img src={src} className="gallery-img" alt={title} />
+//     <div className="gallery-info">
+//       <h5>{title}</h5>
+//       <p>{desc}</p>
+//       <p className="artwork-price">${price}</p>
+//       <button className="buy-button">Buy Now</button>
+//     </div>
+//   </div>
+// );
+
+// const GalleryPage = () => {
+//   const [filteredArtworks, setFilteredArtworks] = useState(galleryData);
+
+//   const handleSearch = ({ query, price, category, artist }) => {
+//     const filtered = galleryData.filter((art) => {
+//       return (
+//         (query
+//           ? art.title.toLowerCase().includes(query.toLowerCase())
+//           : true) &&
+//         (category ? art.category === category : true) &&
+//         (artist
+//           ? art.artist.toLowerCase().includes(artist.toLowerCase())
+//           : true) &&
+//         (price === "low"
+//           ? art.price < 250
+//           : price === "medium"
+//           ? art.price >= 250 && art.price <= 500
+//           : price === "high"
+//           ? art.price > 500
+//           : true)
+//       );
+//     });
+
+//     setFilteredArtworks(filtered);
+//   };
+
+//   return (
+//     <div className="gallery-container">
+//       <h2 className="gallery-title">Discover Our Art Collection</h2>
+//       <SearchFilter onSearch={handleSearch} />
+//       <div className="row">
+//         {filteredArtworks.length > 0 ? (
+//           filteredArtworks.map((item) => (
+//             <GalleryCard key={item.id} {...item} />
+//           ))
+//         ) : (
+//           <p className="no-results">No artworks found.</p>
+//         )}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default GalleryPage;
+
+
+
+
+import React, { useState } from "react";
 import "./Gallery.css";
+import SearchFilter from "./SearchFilter";
 
 const galleryData = [
   {
-    id: 1,
-    src: "/images/landscape1.jpg",
+    id: 10,
+    src: "/images/digi3.jpg",
     title: "Forest Serenity",
     desc: "A breathtaking forest view.",
+    price: 200,
+    category: "landscape",
+    artist: "Alice",
   },
   {
-    id: 2,
-    src: "/images/landscape2.jpg",
+    id: 9,
+    src: "/images/p4.jpg",
     title: "Mountain View",
-    desc: "Snow-covered peaks under the sky.",
+    desc: "Snow-covered peaks.",
+    price: 250,
+    category: "landscape",
+    artist: "Bob",
+  },
+  {
+    id: 8,
+    src: "/images/digi4.jpg",
+    title: "Sunset Bliss",
+    desc: "Golden sunset over calm waters.",
+    price: 300,
+    category: "painting",
+    artist: "Charlie",
+  },
+  {
+    id: 7,
+    src: "/images/wood1.jpg",
+    title: "City Lights",
+    desc: "Vibrant city skyline at night.",
+    price: 350,
+    category: "modern",
+    artist: "Diana",
+  },
+  {
+    id: 6,
+    src: "/images/p1.jpg",
+    title: "Sunset Bliss",
+    desc: "Golden sunset over calm waters.",
+    price: 400,
+    category: "painting",
+    artist: "Emma",
+  },
+  {
+    id: 5,
+    src: "/images/s1.jpg",
+    title: "City Lights",
+    desc: "Vibrant city skyline at night.",
+    price: 450,
+    category: "sculpture",
+    artist: "Frank",
+  },
+  {
+    id: 4,
+    src: "/images/modern2.jpg",
+    title: "Sunset Bliss",
+    desc: "Golden sunset over calm waters.",
+    price: 500,
+    category: "modern",
+    artist: "Grace",
   },
   {
     id: 3,
     src: "/images/modern1.jpg",
-    title: "Sunset Bliss",
-    desc: "Golden sunset over calm waters.",
-  },
-  {
-    id: 4, // Fixed duplicate ID
-    src: "/images/modern2.jpg",
     title: "City Lights",
     desc: "Vibrant city skyline at night.",
+    price: 550,
+    category: "modern",
+    artist: "Hank",
   },
-
   {
-    id: 5,
-    src: "/images/abstract1.jpg",
+    id: 2,
+    src: "/images/landscape2.jpg",
     title: "Sunset Bliss",
     desc: "Golden sunset over calm waters.",
+    price: 600,
+    category: "landscape",
+    artist: "Isla",
   },
   {
-    id: 6, // Fixed duplicate ID
-    src: "/images/abstract2.jpg",
+    id: 1,
+    src: "/images/landscape1.jpg",
     title: "City Lights",
     desc: "Vibrant city skyline at night.",
-  },
-
-  {
-    id: 7,
-    src: "/images/artist1-land.jpg",
-    title: "Sunset Bliss",
-    desc: "Golden sunset over calm waters.",
-  },
-  {
-    id: 8, // Fixed duplicate ID
-    src: "/images/artist1-land2.jpg",
-    title: "City Lights",
-    desc: "Vibrant city skyline at night.",
-  },
-  {
-    id: 9,
-    src: "/images/artist1-land.jpg",
-    title: "Sunset Bliss",
-    desc: "Golden sunset over calm waters.",
-  },
-  {
-    id: 10, // Fixed duplicate ID
-    src: "/images/artist1-land2.jpg",
-    title: "City Lights",
-    desc: "Vibrant city skyline at night.",
+    price: 650,
+    category: "landscape",
+    artist: "Jack",
   },
 ];
 
-const GalleryCard = ({ src, title, desc }) => {
-  return (
-    <div className="gallery-card">
-      <img src={src} className="gallery-img" alt={title} />
-      <div className="gallery-info">
-        <h5>{title}</h5>
-        <p>{desc}</p>
-        <button className="buy-button">Buy Now</button>
-      </div>
+const GalleryCard = ({ src, title, desc, price }) => (
+  <div
+    className="gallery-card"
+    onClick={() => console.log(`Clicked on ${title}`)}
+  >
+    <img src={src} className="gallery-img" alt={title} />
+    <div className="gallery-info">
+      <h5>{title}</h5>
+      <p>{desc}</p>
+      <p className="artwork-price">${price}</p>
+      <button className="buy-button" onClick={() => alert(`Buying ${title}`)}>
+        Buy Now
+      </button>
     </div>
-  );
-};
+  </div>
+);
 
 const GalleryPage = () => {
+  const [filteredArtworks, setFilteredArtworks] = useState(galleryData);
+
+  const handleSearch = ({ query, price, category, artist }) => {
+    const filtered = [...galleryData].filter((art) => {
+      return (
+        (query
+          ? art.title.toLowerCase().includes(query.toLowerCase())
+          : true) &&
+        (category ? art.category === category : true) &&
+        (artist
+          ? art.artist.toLowerCase().includes(artist.toLowerCase())
+          : true) &&
+        (price === "low"
+          ? art.price < 250
+          : price === "medium"
+          ? art.price >= 250 && art.price <= 500
+          : price === "high"
+          ? art.price > 500
+          : true)
+      );
+    });
+
+    setFilteredArtworks(filtered);
+  };
+
   return (
     <div className="gallery-container">
       <h2 className="gallery-title">Discover Our Art Collection</h2>
+      <div onClick={(e) => e.stopPropagation()}>
+        <SearchFilter onSearch={handleSearch} />
+      </div>
       <div className="row">
-        {galleryData.map((item) => (
-          <GalleryCard key={item.id} {...item} />
-        ))}
+        {filteredArtworks.length > 0 ? (
+          filteredArtworks.map((item) => (
+            <GalleryCard key={item.id} {...item} />
+          ))
+        ) : (
+          <p className="no-results">No artworks found.</p>
+        )}
       </div>
     </div>
   );

@@ -75,7 +75,7 @@ const FeaturedArtist = () => {
         ref={(el) => (artistRefs.current[2] = el)}
       >
         <img
-          src="/images/artist3.jpg"
+          src="/images/avatar3.jpg"
           alt="Michael Lee"
           className="artist-image"
         />

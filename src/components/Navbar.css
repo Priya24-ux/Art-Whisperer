@@ -1,3 +1,84 @@
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;600&display=swap');
+
+
+.navbar {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    background: rgba(0, 0, 0, 0.8) !important;
+    
+    backdrop-filter: blur(8px);
+  
+    z-index: 1000;
+}
+
+
+.navbar-brand {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px;
+    font-family: 'Cinzel', serif;
+    color: #FFD700 !important;
+   
+}
+
+
+.navbar-nav .nav-link {
+    font-size: 1.3rem !important;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #f8f9fa !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFD700 !important;
+    
+}
+
+
+.navbar-background {
+   
+    top: 56px;
+   
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+   
+}
+
+
+
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+}
+
+.hide-navbar-bg .navbar-background {
+    display: none !important;
+} 
+
+
+
+
+
+
+
+ */
+
+
+
+
+
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;600&display=swap');
 
@@ -5,11 +86,10 @@
 .navbar {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    background: rgba(0, 0, 0, 0.8) !important;
-    /* Elegant dark transparency */
+    background: rgba(0, 0, 0, 0.5) !important;
     backdrop-filter: blur(8px);
-    /* Subtle glass effect */
     z-index: 1000;
+    /* margin-top: 0px; */
 }
 
 /* Navbar Brand (Logo) */
@@ -19,7 +99,6 @@
     letter-spacing: 1px;
     font-family: 'Cinzel', serif;
     color: #FFD700 !important;
-    /* Gold color */
 }
 
 /* Navbar Links */
@@ -34,24 +113,42 @@
 /* Hover Effect */
 .navbar-nav .nav-link:hover {
     color: #FFD700 !important;
-    /* Gold hover effect */
 }
 
 /* Navbar Background Image */
 .navbar-background {
-   
-    top: 56px;
-    /* Adjust according to navbar height */
+    position: relative;
+    top:0px;
     left: 0;
     width: 100%;
     height: 600px;
     background-size: cover;
     background-position: center;
     transition: background-image 1s ease-in-out;
-    /* z-index: -1; */
+    display: flex;
+    align-items: flex-end;
+    /* Aligns quote at the bottom */
+    justify-content: center;
+    padding-bottom: 40px;
 }
 
+/* Quote Section */
+.quote-container {
+    background: rgba(0, 0, 0, 0.6);
+    /* Dark transparent background */
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 80%;
+}
 
+.quote-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #FFD700;
+    /* Gold color */
+    font-family: 'Playfair Display', serif;
+}
 
 /* Responsive Navbar */
 @media (max-width: 992px) {
@@ -62,8 +159,48 @@
     .navbar-nav .nav-link {
         padding: 10px 0;
     }
+
+    .navbar-background {
+        height: 450px;
+        /* Reduce height for tablets */
+    }
+
+    .quote-text {
+        font-size: 1.2rem;
+    }
 }
+
+@media (max-width: 768px) {
+    .navbar-background {
+        height: 350px;
+        /* Smaller height for mobile */
+        padding-bottom: 20px;
+    }
+
+    .quote-container {
+        max-width: 90%;
+        padding: 10px 15px;
+    }
+
+    .quote-text {
+        font-size: 1rem;
+    }
+}
+
 /* Hide Navbar Background on Non-Home Pages */
 .hide-navbar-bg .navbar-background {
     display: none !important;
 }
+
+
+/* .quote-container {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+} */

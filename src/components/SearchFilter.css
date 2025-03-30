@@ -1,5 +1,5 @@
+/* 
 
-/* Container Styling */
 .search-filter-container {
     background: linear-gradient(135deg, #7d1781, #fe7baf);
     padding: 25px;
@@ -11,14 +11,14 @@
     color: white;
 }
 
-/* Title */
+
 .search-title {
     font-size: 22px;
     margin-bottom: 15px;
     font-weight: bold;
 }
 
-/* Search Bar */
+
 .search-bar {
     display: flex;
     justify-content: center;
@@ -53,7 +53,7 @@
     background: #8f448f;
 }
 
-/* Filters Section */
+
 .filters-section {
     background: rgba(255, 255, 255, 0.2);
     padding: 15px;
@@ -61,7 +61,7 @@
     margin-top: 15px;
 }
 
-/* Filter Group */
+
 .filter-group {
     margin-bottom: 12px;
     text-align: left;
@@ -84,10 +84,243 @@
     font-size: 14px;
 }
 
-/* Apply Filters Button */
+
 .filter-search-btn {
     width: 100%;
     margin-top: 10px;
     padding: 12px;
     font-size: 16px;
+} */
+
+
+
+
+
+/* .search-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+} */
+/*  
+.search-form {
+    background: #1c1c1c;
+  
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-button {
+    background: #ff6f61;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.search-button:hover {
+    background: #ff4b42;
+}
+
+
+.filter-section {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter-dropdown,
+.filter-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+}
+
+
+.apply-filter-button {
+    background: #6a11cb;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.apply-filter-button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+
+
+@media (max-width: 600px) {
+    .filter-section {
+        flex-direction: column;
+    }
+} */
+
+
+
+
+
+
+
+/* Modern Search Form */
+.search-form {
+    background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    margin: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Subtle hover scale effect */
+.search-form:hover {
+    transform: scale(1.02);
+}
+
+/* Inputs and Dropdowns */
+.search-form input,
+.search-form select {
+    padding: 14px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    margin-bottom: 12px;
+    font-size: 16px;
+    background: white;
+    color: #333;
+    transition: 0.3s ease-in-out;
+}
+
+/* Input & Dropdown Focus Effect */
+.search-form input:focus,
+.search-form select:focus {
+    border-color: #ff4b2b;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 75, 43, 0.5);
+}
+
+/* Search Button */
+.search-button {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    padding: 14px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(255, 65, 108, 0.3);
+}
+
+/* 3D Hover Effect */
+.search-button:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 65, 108, 0.5);
+}
+
+/* Filters Section */
+.filter-section {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Dropdowns & Inputs */
+.filter-dropdown,
+.filter-input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    font-size: 14px;
+    outline: none;
+    background: white;
+    color: #333;
+    transition: 0.3s ease-in-out;
+}
+
+/* Dropdown Hover & Focus */
+.filter-dropdown:focus,
+.filter-input:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.5);
+}
+
+/* Apply Filters Button */
+.apply-filter-button {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(106, 17, 203, 0.3);
+}
+
+/* Button Hover Effect */
+.apply-filter-button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(106, 17, 203, 0.5);
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .search-form {
+        width: 90%;
+    }
+
+    .filter-section {
+        flex-direction: column;
+    }
 }

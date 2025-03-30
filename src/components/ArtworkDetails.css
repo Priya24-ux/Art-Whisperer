@@ -1,0 +1,62 @@
+.artwork-details-container {
+    text-align: center;
+   
+    padding: 40px;
+    background: #111;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.artwork-detail-image {
+    width: 60%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.buy-button {
+    background-color: #D4AF37;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #b8962e;
+}
+
+
+.artwork-title {
+    color: white;
+    /* Ensure the title text is white */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.artwork-artist {
+    color: white;
+    /* Ensure the artist text is white */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.artwork-description {
+    color: white;
+    /* Ensure the description text is white */
+    font-size: 16px;
+}
+
+
+.artwork-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    /* Ensuring the price text is white */
+    margin-top: 5px;
+}

@@ -1,6 +1,9 @@
 
 
-// export default Categories;
+
+
+
+
 import { Link } from "react-router-dom";
 import "./Categories.css"; // Ensure you import your CSS file
 
@@ -14,7 +17,7 @@ const Categories = () => {
           fontWeight: "550",
           letterSpacing: "1px",
           color: "#D4AF37",
-          marginTop: "40px", // Adds space above
+          marginTop: "40px",
           textAlign: "center",
         }}
       >
@@ -22,7 +25,7 @@ const Categories = () => {
       </h2>
 
       <div className="categories-container">
-        <Link to="paintings" className="category-item">
+        <Link to="/paintings" className="category-item">
           <div className="category-content">
             <img
               src="/images/painting.jpg"
@@ -33,11 +36,11 @@ const Categories = () => {
           </div>
         </Link>
 
-        <Link to="paintings" className="category-item">
+        <Link to="/wood-art" className="category-item">
           <div className="category-content">
             <img
               src="/images/woodArt.png"
-              alt="wood-art"
+              alt="Wood Art"
               className="category-image"
             />
             <p className="category-text">Wood Art</p>
@@ -47,7 +50,7 @@ const Categories = () => {
         <Link to="/digital-art" className="category-item">
           <div className="category-content">
             <img
-              src="/images/digitalArt.png"
+              src="/images/digi1.jpg"
               alt="Digital Art"
               className="category-image"
             />
@@ -82,3 +85,4 @@ const Categories = () => {
 };
 
 export default Categories;
+

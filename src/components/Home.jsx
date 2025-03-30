@@ -16,13 +16,13 @@ const Home = () => {
           style={{
             fontFamily: "'Cinzel', serif",
             fontSize: "2.3rem",
-            fontWeight: "700",
+            fontWeight: "650",
             color: "#2c2c2c",
-            letterSpacing: "1px",
+            letterSpacing: "1.5px",
             textTransform: "capitalize",
           }}
         >
-          "Creativity takes courage." - Henri Matisse
+          "Where Art Finds Its True Admirers." 
         </h2>
       </div>
 
@@ -32,7 +32,7 @@ const Home = () => {
       <TrendingArtworks />
       {/* <SearchByMedium /> */}
       <FeaturedArtist />
-      <SearchFilter onSearch={(filters) => console.log(filters)} />
+      {/* <SearchFilter onSearch={(filters) => console.log(filters)} /> */}
       {/* <Footer/> */}
     </div>
   );

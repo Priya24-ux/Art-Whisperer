@@ -41,3 +41,31 @@
     font-size: 14px;
     color: #aaa;
 }
+
+
+.buy-button {
+    background-color: #D4AF37;
+    /* Gold color */
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #b8962e;
+    /* Darker gold */
+}
+
+.artwork-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(243, 231, 231);
+    /* Ensuring the price text is white */
+    margin-top: 5px;
+}
