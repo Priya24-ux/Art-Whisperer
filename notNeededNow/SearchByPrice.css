@@ -1,0 +1,39 @@
+.search-price-section {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.search-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.price-slider {
+    width: 60%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.price-display {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.filter-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #444;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-button:hover {
+    background-color: #222;
+}

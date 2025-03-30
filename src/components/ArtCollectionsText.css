@@ -1,0 +1,28 @@
+
+
+.art-collections-wrapper {
+    display: flex;
+    justify-content: flex-end;
+   
+    padding-right: 10%;
+   
+    margin-top: 40px;
+}
+
+.art-collections-container {
+    text-align: left;
+   
+    max-width: 500px;
+    
+}
+
+.art-collections-heading {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0c0c0c;
+}
+
+.art-collections-subtext {
+    font-size: 18px;
+    color: #363434;
+} 
